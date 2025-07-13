@@ -2,8 +2,8 @@ import express, { Request, Response } from "express";
 const flights = require("../data/flights.json");
 const stations = require("../data/stations.json");
 
-const app = express();
-const PORT = 8000;
+const app= express();
+const PORT: number = 8000;
 
 app.use(express.json());
 
