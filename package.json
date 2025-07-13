@@ -10,8 +10,8 @@
   "license": "MIT",
   "description": "",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts",
+    "start": "ts-node api/index.ts",
+    "dev": "nodemon api/index.ts",
     "build": "tsc",
     "serve": "node dist/index.js"
   },
