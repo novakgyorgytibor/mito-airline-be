@@ -1,7 +1,9 @@
 import express, { Request, Response } from "express";
+const flights = require("../data/flights.json");
+const stations = require("../data/stations.json");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 8000;
 
 app.use(express.json());
 
@@ -9,8 +11,14 @@ app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to Mito Airline API!");
 });
 
-app.listen(PORT, () => {
-    console.log(`Mito Airline server is running on port ${PORT}`);
+app.get("/flights", (req: Request, res: Response) => {
+    res.send(flights);
 });
+
+app.get("/stations", (req: Request, res: Response) => {
+    res.send(stations);
+});
+
+app.listen(PORT);
 
 module.exports = app;
