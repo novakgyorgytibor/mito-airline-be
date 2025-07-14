@@ -2,6 +2,8 @@ import express, { Request, Response } from "express";
 const flights = require("../data/flights.json");
 const stations = require("../data/stations.json");
 
+import { Station, Flight } from "../types";
+
 const app= express();
 const PORT: number = 3000;
 
@@ -20,18 +22,19 @@ app.get("/stations", (req: Request, res: Response) => {
 });
 
 app.get("/available-destinations", (req: Request, res: Response) => {
-    console.log(req.query, stations.length);
-    const availableDestinations: any[] = [];
+    const availableDestinations: Station[] = [];
 
     if(req?.query?.origin) {
-        stations.forEach((station: any):void => {
-            if(station.connections.includes(req?.query.origin)) {
+        stations.forEach((station: Station) => {
+            if(station.connections.includes(String(req?.query?.origin))) {
                 availableDestinations.push(station);
             }
         })
     } else {
-        res.status(400).send("Required parameter: origin");
+        res.send(stations);
+        return;
     }
+
     res.send(availableDestinations);
 });
 
