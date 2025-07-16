@@ -3,8 +3,8 @@
     "id": "e0f8448d-61f0-4f02-aadf-1103c0ce4b2b",
     "departureStation": "BUD",
     "arrivalStation": "LTN",
-    "departureDateTime": "2025-07-09T06:00:00",
-    "arrivalDateTime": "2025-07-09T07:45:00",
+    "departureDateTime": "2025-07-19T06:00:00",
+    "arrivalDateTime": "2025-07-19T07:45:00",
     "fares": [
       {
         "price": { "amount": 10590, "currencyCode": "HUF" },
@@ -27,8 +27,8 @@
     "id": "2eb869f0-2d1e-4e20-bfc2-d5b2709cc52e",
     "departureStation": "LTN",
     "arrivalStation": "BUD",
-    "departureDateTime": "2025-07-09T08:30:00",
-    "arrivalDateTime": "2025-07-09T12:00:00",
+    "departureDateTime": "2025-07-19T08:30:00",
+    "arrivalDateTime": "2025-07-19T12:00:00",
     "fares": [
       {
         "price": { "amount": 34090, "currencyCode": "HUF" },
@@ -51,8 +51,8 @@
     "id": "3be3874b-5395-46cb-b7f0-1d9632b6c999",
     "departureStation": "BUD",
     "arrivalStation": "LTN",
-    "departureDateTime": "2025-07-09T13:15:00",
-    "arrivalDateTime": "2025-07-09T15:00:00",
+    "departureDateTime": "2025-07-19T13:15:00",
+    "arrivalDateTime": "2025-07-19T15:00:00",
     "fares": [
       {
         "price": { "amount": 21290, "currencyCode": "HUF" },
@@ -75,8 +75,8 @@
     "id": "8a7e7ef6-51bb-45f3-a8fd-b2c2acb2b9e0",
     "departureStation": "LTN",
     "arrivalStation": "BUD",
-    "departureDateTime": "2025-07-09T16:25:00",
-    "arrivalDateTime": "2025-07-09T19:55:00",
+    "departureDateTime": "2025-07-19T16:25:00",
+    "arrivalDateTime": "2025-07-19T19:55:00",
     "fares": [
       {
         "price": { "amount": 42590, "currencyCode": "HUF" },
@@ -99,8 +99,8 @@
     "id": "1211b719-0d31-4227-bf94-3b64d45cf340",
     "departureStation": "BUD",
     "arrivalStation": "LTN",
-    "departureDateTime": "2025-07-09T17:40:00",
-    "arrivalDateTime": "2025-07-09T19:25:00",
+    "departureDateTime": "2025-07-19T17:40:00",
+    "arrivalDateTime": "2025-07-19T19:25:00",
     "fares": [
       {
         "price": { "amount": 23890, "currencyCode": "HUF" },
@@ -123,8 +123,8 @@
     "id": "53b46d1d-30e5-4ff6-8378-77d1ee7dc334",
     "departureStation": "LTN",
     "arrivalStation": "BUD",
-    "departureDateTime": "2025-07-09T20:05:00",
-    "arrivalDateTime": "2025-07-09T23:35:00",
+    "departureDateTime": "2025-07-19T20:05:00",
+    "arrivalDateTime": "2025-07-19T23:35:00",
     "fares": [
       {
         "price": { "amount": 29790, "currencyCode": "HUF" },

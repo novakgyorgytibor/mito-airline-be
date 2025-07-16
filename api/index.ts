@@ -1,10 +1,12 @@
-import express, { Request, Response } from "express";
-const flights = require("../data/flights.json");
-const stations = require("../data/stations.json");
+import moment from "moment";
+import express, {Request, Response} from "express";
 
-import { Station, Flight } from "../types";
+const flights = require("./data/flights.json");
+const stations = require("./data/stations.json");
 
-const app= express();
+import {Station, Flight} from "./types";
+
+const app = express();
 const PORT: number = 3000;
 
 app.use(express.json());
@@ -18,15 +20,20 @@ app.get("/flights", (req: Request, res: Response) => {
 });
 
 app.get("/stations", (req: Request, res: Response) => {
+    if (req.query.iata) {
+        const requestedStation = stations.find((station: Station) => station.iata === req.query.iata);
+        res.send(requestedStation);
+        return;
+    }
     res.send(stations);
 });
 
 app.get("/available-destinations", (req: Request, res: Response) => {
     const availableDestinations: Station[] = [];
 
-    if(req?.query?.origin) {
+    if (req?.query?.origin) {
         stations.forEach((station: Station) => {
-            if(station.connections.includes(String(req?.query?.origin))) {
+            if (station.connections.includes(String(req?.query?.origin))) {
                 availableDestinations.push(station);
             }
         })
@@ -36,6 +43,26 @@ app.get("/available-destinations", (req: Request, res: Response) => {
     }
 
     res.send(availableDestinations);
+});
+
+app.get("/available-flights", (req: Request, res: Response) => {
+    const availableFlights: Flight[] = [];
+
+    if (!(req?.query?.date
+        && req?.query?.destination
+        && req?.query?.origin)) {
+        res.send(availableFlights);
+    }
+
+    flights.forEach((flight: Flight) => {
+        if ((moment(flight.departureDateTime).format('L') === moment(req?.query?.date as string).format('L'))
+            && flight.departureStation === req?.query?.origin
+            && flight.arrivalStation === req?.query?.destination) {
+            availableFlights.push(flight);
+        }
+    })
+
+    res.send(availableFlights);
 });
 
 
