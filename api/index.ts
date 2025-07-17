@@ -13,6 +13,14 @@ const PORT: number = 3000;
 app.use(cors({credentials: true, origin: true}));
 
 app.use(express.json());
+
+app.use((req, res, next) => {
+    res.append('Access-Control-Allow-Origin', ['*']);
+    res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.append('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+});
+
 app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to Mito Airline API!");
 });
