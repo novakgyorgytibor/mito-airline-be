@@ -10,7 +10,7 @@ import {Station, Flight} from "./types";
 const app = express();
 const PORT: number = 3000;
 
-app.use(cors);
+app.use(cors({credentials: true, origin: true}));
 
 app.use(express.json());
 
