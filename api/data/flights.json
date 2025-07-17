@@ -430,5 +430,437 @@
         "bundle": "plus"
       }
     ]
+  },
+  {
+    "id": "e0f8448d-61f0-4f02-aadf-1103c0ce4b2b",
+    "departureStation": "BUD",
+    "arrivalStation": "LTN",
+    "departureDateTime": "2025-08-18T06:00:00",
+    "arrivalDateTime": "2025-08-18T07:45:00",
+    "fares": [
+      {
+        "price": { "amount": 10590, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 35597, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 47493, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "e0f8448d-61f0-4f02-aadf-1003c0ce4b2b",
+    "departureStation": "BUD",
+    "arrivalStation": "LTN",
+    "departureDateTime": "2025-08-19T06:00:00",
+    "arrivalDateTime": "2025-08-19T07:45:00",
+    "fares": [
+      {
+        "price": { "amount": 10590, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 35597, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 47493, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "2eb869f0-2d1e-4e20-bfc2-d5b2709cc52e",
+    "departureStation": "LTN",
+    "arrivalStation": "BUD",
+    "departureDateTime": "2025-08-19T08:30:00",
+    "arrivalDateTime": "2025-08-19T12:00:00",
+    "fares": [
+      {
+        "price": { "amount": 34090, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 62635, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 78696, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "3be3874b-5395-46cb-b7f0-1d9632b6c999",
+    "departureStation": "BUD",
+    "arrivalStation": "LTN",
+    "departureDateTime": "2025-08-19T13:15:00",
+    "arrivalDateTime": "2025-08-19T15:00:00",
+    "fares": [
+      {
+        "price": { "amount": 21290, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 45875, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 58193, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "8a7e7ef6-51bb-45f3-a8fd-b2c2acb2b9e0",
+    "departureStation": "LTN",
+    "arrivalStation": "BUD",
+    "departureDateTime": "2025-08-19T16:25:00",
+    "arrivalDateTime": "2025-08-19T19:55:00",
+    "fares": [
+      {
+        "price": { "amount": 42590, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 68835, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 87196, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "1211b719-0d31-4227-bf94-3b64d45cf340",
+    "departureStation": "BUD",
+    "arrivalStation": "LTN",
+    "departureDateTime": "2025-08-19T17:40:00",
+    "arrivalDateTime": "2025-08-19T19:25:00",
+    "fares": [
+      {
+        "price": { "amount": 23890, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 48475, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 60793, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "53b46d1d-30e5-4ff6-8378-77d1ee7dc334",
+    "departureStation": "LTN",
+    "arrivalStation": "BUD",
+    "departureDateTime": "2025-08-19T20:05:00",
+    "arrivalDateTime": "2025-08-19T23:35:00",
+    "fares": [
+      {
+        "price": { "amount": 29790, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 58556, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 74396, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "53b46d1d-30e5-4ff6-8378-77d1ee7dc335",
+    "departureStation": "LTN",
+    "arrivalStation": "BUD",
+    "departureDateTime": "2025-08-20T20:05:00",
+    "arrivalDateTime": "2025-08-20T23:35:00",
+    "fares": [
+      {
+        "price": { "amount": 29790, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 58556, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 74396, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "a1f3d8e1-bad1-4f6a-bdc3-091c54094f5f",
+    "departureStation": "TZL",
+    "arrivalStation": "DTM",
+    "departureDateTime": "2025-08-18T08:15:00",
+    "arrivalDateTime": "2025-08-18T10:00:00",
+    "fares": [
+      {
+        "price": { "amount": 8990, "currencyCode": "HUF" },
+        "remainingTickets": 3,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 25990, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 38990, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "b8e07fc2-11fc-4c6d-b3df-39c2ad7a2aef",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-18T12:00:00",
+    "arrivalDateTime": "2025-08-18T13:45:00",
+    "fares": [
+      {
+        "price": { "amount": 11200, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 32900, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 45100, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "f4cc7d29-5ff9-4f95-8b34-c054f7d4eb72",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-18T07:20:00",
+    "arrivalDateTime": "2025-08-18T08:30:00",
+    "fares": [
+      {
+        "price": { "amount": 10490, "currencyCode": "HUF" },
+        "remainingTickets": 4,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 33990, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 46790, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "d47c19da-57cf-409e-8b3e-5f2899fd0ce4",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-18T14:10:00",
+    "arrivalDateTime": "2025-08-18T16:30:00",
+    "fares": [
+      {
+        "price": { "amount": 11890, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 34500, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 47990, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "29fd1d01-2bcb-4bcb-8a67-66b4d2a8fbe0",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-17T09:40:00",
+    "arrivalDateTime": "2025-08-17T12:20:00",
+    "fares": [
+      {
+        "price": { "amount": 10950, "currencyCode": "HUF" },
+        "remainingTickets": 5,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 32100, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 45650, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "c91c7809-1606-4c17-89b3-f6f2fcb6ac45",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-17T10:30:00",
+    "arrivalDateTime": "2025-08-17T12:00:00",
+    "fares": [
+      {
+        "price": { "amount": 10120, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 31800, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 43990, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "36f45c86-0c0f-42a4-a529-c93e8df048d6",
+    "departureStation": "TZL",
+    "arrivalStation": "DTM",
+    "departureDateTime": "2025-08-18T15:00:00",
+    "arrivalDateTime": "2025-08-18T17:30:00",
+    "fares": [
+      {
+        "price": { "amount": 11380, "currencyCode": "HUF" },
+        "remainingTickets": 4,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 33600, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 46590, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "7731cf61-052e-4df4-865c-c7d22758d880",
+    "departureStation": "TZL",
+    "arrivalStation": "DTM",
+    "departureDateTime": "2025-08-18T06:45:00",
+    "arrivalDateTime": "2025-08-18T08:20:00",
+    "fares": [
+      {
+        "price": { "amount": 8990, "currencyCode": "HUF" },
+        "remainingTickets": 3,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 27450, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 41200, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "8dbd71f6-77d2-46a3-8421-3f34b7770d92",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-19T16:10:00",
+    "arrivalDateTime": "2025-08-19T18:10:00",
+    "fares": [
+      {
+        "price": { "amount": 10790, "currencyCode": "HUF" },
+        "remainingTickets": 5,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 33750, "currencyCode": "HUF" },
+        "remainingTickets": 2,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 46840, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "plus"
+      }
+    ]
+  },
+  {
+    "id": "57e6bc6f-1c61-47be-a3c3-36c3e2893729",
+    "departureStation": "DTM",
+    "arrivalStation": "TZL",
+    "departureDateTime": "2025-08-19T05:30:00",
+    "arrivalDateTime": "2025-08-19T07:40:00",
+    "fares": [
+      {
+        "price": { "amount": 9800, "currencyCode": "HUF" },
+        "remainingTickets": 3,
+        "bundle": "basic"
+      },
+      {
+        "price": { "amount": 28900, "currencyCode": "HUF" },
+        "remainingTickets": 1,
+        "bundle": "standard"
+      },
+      {
+        "price": { "amount": 41990, "currencyCode": "HUF" },
+        "remainingTickets": 0,
+        "bundle": "plus"
+      }
+    ]
   }
 ]
