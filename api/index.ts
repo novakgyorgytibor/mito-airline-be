@@ -1,25 +1,21 @@
 import moment from "moment";
-import express, { Request, Response } from "express";
+import express from "express";
 const cors = require("cors");
+
+import type { Request, Response } from "express";
+import type { Station, Flight } from "./types";
 
 const flights = require("./data/flights.json");
 const stations = require("./data/stations.json");
-
-import { Station, Flight } from "./types";
 
 const app = express();
 const PORT: number = 3000;
 
 app.use(cors());
-
 app.use(express.json());
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Welcome to Mito Airline API!");
-});
-
 app.get("/flights", (req: Request, res: Response) => {
-  res.send(flights);
+  res.json(flights);
 });
 
 app.get("/stations", (req: Request, res: Response) => {
@@ -27,34 +23,36 @@ app.get("/stations", (req: Request, res: Response) => {
     const requestedStation = stations.find(
       (station: Station) => station.iata === req.query.iata,
     );
-    res.send(requestedStation);
+    res.json(requestedStation);
     return;
   }
-  res.send(stations);
+  res.json(stations);
 });
 
 app.get("/available-destinations", (req: Request, res: Response) => {
   const availableDestinations: Station[] = [];
 
-  if (req?.query?.origin) {
-    stations.forEach((station: Station) => {
-      if (station.connections.includes(String(req?.query?.origin))) {
-        availableDestinations.push(station);
-      }
-    });
-  } else {
-    res.send(stations);
+  if (!req?.query?.origin) {
+    res.status(400).send("Missing required parameter(s): origin!");
     return;
   }
 
-  res.send(availableDestinations);
+  stations.forEach((station: Station) => {
+    if (station.connections.includes(String(req?.query?.origin))) {
+      availableDestinations.push(station);
+    }
+  });
+
+  res.json(availableDestinations);
 });
 
 app.get("/available-flights", (req: Request, res: Response) => {
   const availableFlights: Flight[] = [];
 
   if (!(req?.query?.date && req?.query?.destination && req?.query?.origin)) {
-    res.send(availableFlights);
+    res
+      .status(400)
+      .send("Missing required parameter(s): date, destination, origin!");
   }
 
   flights.forEach((flight: Flight) => {
@@ -68,7 +66,7 @@ app.get("/available-flights", (req: Request, res: Response) => {
     }
   });
 
-  res.send(availableFlights);
+  res.json(availableFlights);
 });
 
 app.listen(PORT);
