@@ -1,6 +1,6 @@
 import moment from "moment";
 import express, {Request, Response} from "express";
-const cors = require('cors')
+const cors = require('cors');
 
 const flights = require("./data/flights.json");
 const stations = require("./data/stations.json");
