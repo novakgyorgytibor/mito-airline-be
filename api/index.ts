@@ -13,7 +13,6 @@ const PORT: number = 3000;
 app.use(cors({credentials: true, origin: true}));
 
 app.use(express.json());
-
 app.get("/", (req: Request, res: Response) => {
     res.send("Welcome to Mito Airline API!");
 });
