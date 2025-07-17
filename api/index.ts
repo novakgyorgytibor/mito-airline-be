@@ -1,5 +1,6 @@
 import moment from "moment";
 import express, {Request, Response} from "express";
+const cors = require('cors')
 
 const flights = require("./data/flights.json");
 const stations = require("./data/stations.json");
@@ -8,6 +9,8 @@ import {Station, Flight} from "./types";
 
 const app = express();
 const PORT: number = 3000;
+
+app.use(cors);
 
 app.use(express.json());
 
